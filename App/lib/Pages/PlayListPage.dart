@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'NowPlayingPage.dart';
+
 
 
 class PlayListPage extends StatefulWidget {
@@ -18,6 +20,7 @@ class PlayListPageState extends State<PlayListPage>{
         child: ElevatedButton(
           child:Text("NowPlayingPage"),
           onPressed:()=>{
+            Navigator.push(context,MaterialPageRoute(builder:(context)=>NowPlayingPage()))
 
           },
         ),

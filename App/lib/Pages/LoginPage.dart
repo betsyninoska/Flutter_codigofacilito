@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'MyHomePage.dart';
+import '../Common/MyRouters.dart';
+//import 'MyHomePage.dart';
 
 
 
@@ -20,8 +21,8 @@ class LoginPageState extends State<LoginPage>{
         child: ElevatedButton(
           child:Text("Mi Home Page"),
           onPressed:()=>{
-            Navigator.push(context,MaterialPageRoute(builder:(context)=>MyHomePage()))
-
+            //Navigator.push(context,MaterialPageRoute(builder:(context)=>MyHomePage()))
+              Navigator.pushNamed(context,ROUTE_HOME)
           },
         ),
       ),
